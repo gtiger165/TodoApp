@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorLight">#e7f1e2</color>
+    <color name="colorDark">#3b3a3a</color>
+    <color name="colorRed">#e20e0e</color>
+    <color name="warnaKhusus">#b96af1</color>
+    <color name="warnaHarian">#ea7f38</color>
+    <color name="warnaPilihan">#6f706f</color>
+</resources>

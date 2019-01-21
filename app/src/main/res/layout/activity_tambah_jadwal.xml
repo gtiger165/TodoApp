@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context="com.hirarki.todoapp.TambahJadwal">
+
+    <TextView
+        android:id="@+id/label_judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah Jadwal Aktivitas"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:gravity="center"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/label_kategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_judul"
+        android:text="Kategori\t: "
+        android:fontFamily="sans-serif-condensed"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+    <Spinner
+        android:id="@+id/spinner_kategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_judul"
+        android:layout_toRightOf="@id/label_kategori"/>
+
+    <TextView
+        android:id="@+id/label_tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_kategori"
+        android:text="Tanggal\t\t: "
+        android:fontFamily="sans-serif-condensed"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:paddingTop="10dp"/>
+
+    <EditText
+        android:id="@+id/edit_Text_Tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_kategori"
+        android:layout_toRightOf="@id/label_tanggal"
+        android:clickable="true"
+        android:focusable="false"
+        android:inputType="date"
+        android:hint="Tekan disini!"/>
+
+    <TextView
+        android:id="@+id/label_jam"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_tanggal"
+        android:text="Jam\t\t\t\t\t\t\t: "
+        android:fontFamily="sans-serif-condensed"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:paddingTop="10dp"/>
+
+    <EditText
+        android:id="@+id/edit_Text_Waktu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_Text_Tanggal"
+        android:layout_toRightOf="@id/label_jam"
+        android:clickable="true"
+        android:focusable="false"
+        android:inputType="time"
+        android:hint="Tekan disini!"/>
+
+    <TextView
+        android:id="@+id/label_kegiatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_jam"
+        android:text="Kegiatan\t: "
+        android:fontFamily="sans-serif-condensed"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:paddingTop="15dp"/>
+
+    <EditText
+        android:id="@+id/edit_Text_Kegiatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_Text_Waktu"
+        android:layout_toRightOf="@id/label_kegiatan"
+        android:inputType="text"
+        android:hint="Set kegiatan"/>
+
+    <Button
+        android:id="@+id/button_simpan"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_kegiatan"
+        android:layout_centerHorizontal="true"
+        android:text="Tambah"
+        android:textAllCaps="false"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorLight"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
